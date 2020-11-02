@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
-
-
 import random 
 import math
 
@@ -34,8 +31,6 @@ import math
 # Your first task is to generate a function to check if a point falls within a circle with radius K (or on the boundary).  To simplify this lab, let's assume that the circle is centered at (0,0) in an x-y coordinate system.  I have provided a few test cases your function should pass before you move on.  If a point is within the circle return true, otherwise return false.  No need to worry about robust error handling here, just a simple return statement.  Let's pretend this is tennis and lines are in, so anything actually on the circle is considered in the circle.
 # 
 
-# In[3]:
-
 
 def inCircle(x_coord,y_coord,circle_radius):
     #your code here
@@ -43,18 +38,6 @@ def inCircle(x_coord,y_coord,circle_radius):
         return True
     else:
         return False
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-# In[4]:
 
 
 #true
@@ -63,8 +46,6 @@ inCircle(math.sqrt(2)/2,math.sqrt(2)/2,1)
 #false
 inCircle(.8,.8,1)
 
-
-# In[9]:
 
 
 ##Create a list of n (x,y) tuples 
@@ -80,17 +61,7 @@ def random_tuple_creator(n):
         two_pole = (tp_1,tp_2)
         two_pole_list.append(two_pole)
     return(two_pole_list)
-        
 
-
-
-
-
-
-
-
-
-# In[10]:
 
 
 random_tuple_creator(10)
@@ -100,7 +71,7 @@ random_tuple_creator(10)
 # 
 # The input to the function will be that list of tuples.  Next you will need to use each of those points and determine if it's within the circle or not.  Keep track of the total number of points in the circle, and the total number of points.  To make things easy, merely loop through the input of this function and use your in circle check to keep track of the proportion in the circle.
 
-# In[3]:
+
 
 
 #Nicholas Novak Pi calculator sample code
@@ -145,19 +116,11 @@ def piApproximation(tuple_list):
             final_list.append(i)
     pie = (points_in*4)/total_points
     return(pie)
-        
-    
-    
-    
-    
-    
-    
     
     pass
 
 
-# In[6]:
+
 
 
 piApproximation(random_tuple_creator(100000))
-
