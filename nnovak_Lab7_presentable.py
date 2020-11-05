@@ -1,11 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
+# Nicholas Novak
+# Python course code sample
 
 import random 
 import math
 
 
-# In today's lab we are going to work with the random library and approximate pi using a probabilistic approach (monte carlo combined with a uniform distribution).  While probability knowledge is certainly not a prerequistie for this class if you want a visual representation of what we are doing you can follow the logic below.  
+# In this activity, we are going to work with the random library and approximate pi using a probabilistic approach (monte carlo combined with a uniform distribution).  While probability knowledge is certainly not a prerequistie for this class if you want a visual representation of what we are doing you can follow the logic below.  
 # 
 # We are going to take a square with sides K.  We are going to have a circle inscribed in the square with diamater K (and radius K/2)
 # 
